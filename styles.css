@@ -41,8 +41,8 @@ body {
 }
 
 .box .info img {
-    width: 150px; /* Mengatur lebar gambar */
-    height: 150px; /* Mengatur tinggi gambar */
+    width: 130px; /* Mengatur lebar gambar */
+    height: 130px; /* Mengatur tinggi gambar */
     object-fit: cover; /* Mengatur agar gambar tetap berukuran 1:1 */
     float: left; /* Mengatur gambar berada di sebelah kiri teks */
     margin-right: 10px; /* Margin antara gambar dan teks */
