@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #FF4136, #0074D9); /* Warna latar belakang gradient */
+}
+
+.box {
+    position: relative;
+    width: 60vh;
+    background: linear-gradient(90deg, #0074D9, #FF4136); /* Warna kotak gradient */
+    color: white;
+    font-size: 5vh;
+    cursor: pointer;
+    transition: all 0.5s ease; /* Animasi memanjang dan mempersempit kotak */
+    border-radius: 10px;
+    overflow: hidden; /* Agar konten tetap dalam kotak saat memanjang */
+}
+
+.box .content {
+    padding: 10vh;
+    text-align: center; /* Tengahkan tulisan Lannz:22 */
+    transition: transform 0.3s ease; /* Animasi geser ke atas */
+}
+
+.box .info {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: linear-gradient(90deg, #FF4136, #0074D9); /* Warna kotak yang sama */
+    color: white;
+    text-align: left; /* Teks sejajar ke kiri */
+    border-radius: 0 0 10px 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.box .info img {
+    width: 150px; /* Mengatur lebar gambar */
+    height: 150px; /* Mengatur tinggi gambar */
+    object-fit: cover; /* Mengatur agar gambar tetap berukuran 1:1 */
+    float: left; /* Mengatur gambar berada di sebelah kiri teks */
+    margin-right: 10px; /* Margin antara gambar dan teks */
+}
+
+.box .info p {
+    margin: 5px; /* Margin antara paragraf pada info box */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Animasi fade in */
+}
+
+.box .hidden {
+    display: none;
+}
+
+.box.open {
+    width: 101vh; /* Lebar kotak saat muncul info box */
+    height: 32vh; /* Tinggi kotak saat muncul info box */
+}
+
+.box.open .content {
+    transform: translateY(-35%); /* Geser tulisan Lannz:22 ke atas */
+}
+
+.box.open .info {
+    height: 155px; /* Tinggi info box saat muncul */
+    top: 58%; /* Geser info box ke tengah kotak */
+    transform: translateY(-50%);
+    left: 7px;
+}
+
+.box.open .info p {
+    opacity: 1;
+}
