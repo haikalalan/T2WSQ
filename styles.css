@@ -49,7 +49,7 @@ body {
 }
 
 .box .info p {
-    margin: 5px; /* Margin antara paragraf pada info box */
+    margin: 12px; /* Margin antara paragraf pada info box */
     opacity: 0;
     transition: opacity 0.3s ease; /* Animasi fade in */
 }
